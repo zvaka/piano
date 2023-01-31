@@ -1,0 +1,40 @@
+A CSS pseudo-element is used to style --specified parts of an element--.
+
+For example, it can be used to:
+
+1. Style the first letter, or line, of an element
+2. Insert content before, or after, the content of an element
+
+p::first-line ----> can only be applied to block-level elements
+p::first-letter ----|> can only be applied to block-level elements
+h1::before {content: url(smiley.gif);}
+h1::after {content: url(smiley.gif);}
+::marker pseudo-element selects the markers of list items (color, font-size)
+
+---------------------------------------------------------------
+
+
+CSS Pseudo-classes
+
+A pseudo-class is used to define a special state of an element.
+
+a:link
+a:visited
+a:hover
+a:active
+
+*Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+*Pseudo-classes can be combined with HTML classes:
+a.highlight:hover 
+div:hover
+
+
+p:first-child --> odnosi se na paragraf koji je prvo dete svakog elementa
+p i:first-child --> odnosi se na na sve prve i elemente u okviru paragrafa
+------------------------------------------------------------
+
+
+content= "", ----> prazan string "" će osigurati da se element prikaže na stranici dok je još prazan.
+
+
